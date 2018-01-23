@@ -8,3 +8,6 @@ def index(request):
        'boldmessage': "Crunchy, creamy, cookie, candy, cupcake!"
     }
     return render(request, 'rango/index.html', context=contextDict)
+
+def about(request):
+    return HttpResponse("Rango says here is the about page.")
