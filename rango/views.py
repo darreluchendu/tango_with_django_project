@@ -10,4 +10,5 @@ def index(request):
     return render(request, 'rango/index.html', context=contextDict)
 
 def about(request):
-    return render(request,"rango/about.html")
+    context={"creator":"Darrel Uchendu".encode("utf-8")}
+    return render(request,"rango/about.html",context)
