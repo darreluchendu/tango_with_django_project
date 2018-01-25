@@ -8,6 +8,7 @@ class PageInline(admin.TabularInline):
     extra = 1
 
 class CategoryAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('name',)}
     inlines = [PageInline]
     list_display = ("name","views","likes")
 

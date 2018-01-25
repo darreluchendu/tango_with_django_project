@@ -51,7 +51,7 @@ def populate():
             print("- {0} - {1}".format(str(c), str(p)))
 
 
-def add_page(cat, title, url, views=0):
+def add_page(cat, title, url, views=12):
 
     p = Page.objects.get_or_create(category=cat, title=title)[0]
     p.url = url
