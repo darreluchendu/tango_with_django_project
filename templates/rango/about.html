@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <a href="/rango/">Index</a>
+    <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a normal cat">
+     <img src="{% static "images/cat2.jpg" %}"alt="Picture of Rango" />
+    <p>This tutorial has been put together by {{creator}}</p>
+
+</html>
